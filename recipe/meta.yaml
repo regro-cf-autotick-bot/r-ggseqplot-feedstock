@@ -1,4 +1,4 @@
-{% set version = "0.8.9" %}
+{% set version = "1.0.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggseqplot_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggseqplot/ggseqplot_{{ version }}.tar.gz
-  sha256: 58ec618215026cd8054953ab66cc7dd6f349b93058a902fcee6d23409e3b75ca
+  sha256: 884f07ae53ef95f2e4c5a384af6abb6344d1c7e583a897f14540ceaeb79597fa
 
 build:
   number: 0
@@ -69,8 +69,8 @@ test:
 about:
   home: https://github.com/maraab23/ggseqplot
   license: GPL-3.0-or-later
-  summary: A set of wrapper functions that mainly re-produces some of the sequence plots rendered with TraMineR::seqplot() and 'TraMineRextras'. Whereas 'TraMineR' uses base R to produce the plots this library draws on 'ggplot2'. The plots are produced on the basis of a sequence object defined with TraMineR::seqdef(). The
-    package automates the reshaping and plotting of sequence data. Resulting plots are of class 'ggplot', i.e. components can be added and tweaked using '+' and regular 'ggplot2' functions.
+  summary: A set of wrapper functions that mainly re-produces some of the sequence plots rendered with TraMineR::seqplot() and 'TraMineRextras'. Whereas 'TraMineR' uses base R to produce the plots this library draws on 'ggplot2'. The plots are produced on the basis of a sequence object defined with TraMineR::seqdef(). 
+    The package automates the reshaping and plotting of sequence data. Resulting plots are of class 'ggplot', i.e. components can be added and tweaked using '+' and regular 'ggplot2' functions.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
